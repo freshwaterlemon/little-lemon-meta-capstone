@@ -1,17 +1,18 @@
 import React from 'react'
+import HeroSelection from '../HeroSelection/HeroSelection'
+import Menu from '../Menu/Menu'
+import About from '../About/About'
 
 const Body = () => {
   return (
     <>
       <main>
         <section id="home">
-          <h2>Little Lemon</h2>
-          {/* Home content */}
+          <HeroSelection />
         </section>
 
         <section id="menu">
-          <h2>Menu</h2>
-          {/* Menu content */}
+          <Menu />
         </section>
 
         <section id="review">
@@ -20,8 +21,7 @@ const Body = () => {
         </section>
 
         <section id="about">
-          <h2>About</h2>
-          {/* About content */}
+          <About />
         </section>
 
 
