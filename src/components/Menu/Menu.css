@@ -43,17 +43,16 @@
 	color: #333;
 }
 
-.header-container {
+.menu-header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
     width: 85%;
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: 3rem auto 1rem auto;
 }
 
-.header-container h2{
+.menu-header-container h2{
     font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 	color: var(--color-primary-green);

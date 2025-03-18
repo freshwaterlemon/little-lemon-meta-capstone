@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSelection from '../HeroSelection/HeroSelection'
 import Menu from '../Menu/Menu'
 import About from '../About/About'
+import Review from '../Review/Review'
 
 const Body = () => {
   return (
@@ -16,16 +17,12 @@ const Body = () => {
         </section>
 
         <section id="review">
-          <h2>Review</h2>
-          {/* reviews content */}
+          <Review />
         </section>
 
         <section id="about">
           <About />
         </section>
-
-
-
       </main>
     </>
 

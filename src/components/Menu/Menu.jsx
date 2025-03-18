@@ -54,7 +54,7 @@ function MenuButton() {
 const Menu = () => {
     return (
         <>
-            <div className="header-container">
+            <div className="menu-header-container">
                 <h2>Special</h2>
                 <MenuButton />
             </div>
