@@ -1,0 +1,10 @@
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: var(--color-primary-green);
+    color: var(--color-primary-white);
+    padding: 1rem;
+    gap: 1rem;
+}
