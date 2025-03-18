@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = ({ className }) => {
@@ -17,15 +18,18 @@ const Navbar = ({ className }) => {
       </div>
 
       <ul className={`navbar ${className || ''} ${isMenuOpen ? 'active' : ''}`}>
-        <li><a href="#home" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
-        <li><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
-        <li><a href="#menu" onClick={() => setIsMenuOpen(false)}>MENU</a></li>
-        <li><a href="#reservation" onClick={() => setIsMenuOpen(false)}>RESERVATION</a></li>
-        <li><a href="#order-online" onClick={() => setIsMenuOpen(false)}>ORDER ONLINE</a></li>
-        <li><a href="#login" onClick={() => setIsMenuOpen(false)}>LOGIN</a></li>
+        <li><Link to="/" onClick={() => setIsMenuOpen(false)}>HOME</Link></li>
+        <li><Link to="/#menu" onClick={() => setIsMenuOpen(false)}>MENU</Link></li>
+        <li><Link to="/#review" onClick={() => setIsMenuOpen(false)}>REVIEW</Link></li>
+        <li><Link to="/#about" onClick={() => setIsMenuOpen(false)}>ABOUT</Link></li>
+        <li><Link to="/reservation" onClick={() => setIsMenuOpen(false)}>RESERVATION</Link></li>
+        <li><Link to="/order-online" onClick={() => setIsMenuOpen(false)}>ORDER ONLINE</Link></li>
+        <li><Link to="/login" onClick={() => setIsMenuOpen(false)}>LOGIN</Link></li>
+
       </ul>
     </nav>
   )
 }
 
 export default Navbar
+

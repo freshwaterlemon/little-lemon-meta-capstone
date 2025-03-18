@@ -15,3 +15,7 @@
     text-decoration: none;
     color: var(--color-primary-green);
 }
+
+.social-media-list a:hover {
+	color: var(--color-primary-orange, #F4CE14);
+}
