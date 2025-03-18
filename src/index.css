@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Markazi Text", "Karla", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,56 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* colour guide variable*/
+  --color-primary-green: #495E57;
+  --color-primary-yellow: #F4CE14;
+  --color-secondary-coral: #EE9972;
+  --color-secondary-peach: #FBDABB;
+  --color-secondary-grey: #EDEFEE;
+  --color-secondary-black: #333333;
+
+}
+
+/* typeface requirement start*/
+.lead-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.section-title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.section-categories {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.card-title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.paragraph-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+/* typeface requirement end */
+
+.highlight-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 a {
