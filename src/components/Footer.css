@@ -1,10 +1,19 @@
-.footer-section{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: var(--color-primary-green);
-    color: var(--color-primary-white);
-    padding: 1rem;
-    gap: 1rem;
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+    color: var(--color-primary-green);
+    text-align: left;
+}
+
+.footer-img,
+.doormat-navigation,
+.contact,
+.social-media {
+	flex: 1;
+	padding: 0 6rem;
+    margin: 0 auto;
+}
+
+.footer-img img{
+    height: 5em;
 }

@@ -1,0 +1,17 @@
+.social-media-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.social-media-list li {
+    margin: 0;
+}
+
+.social-media-list a {
+    text-decoration: none;
+    color: var(--color-primary-green);
+}
