@@ -24,7 +24,7 @@ const Navbar = ({ className }) => {
         <li><Link to="/#about" onClick={() => setIsMenuOpen(false)}>ABOUT</Link></li>
         <li><Link to="/reservation" onClick={() => setIsMenuOpen(false)}>RESERVATION</Link></li>
         <li><Link to="/order-online" onClick={() => setIsMenuOpen(false)}>ORDER ONLINE</Link></li>
-        <li><Link to="/login" onClick={() => setIsMenuOpen(false)}>LOGIN</Link></li>
+        {/* <li><Link to="/login" onClick={() => setIsMenuOpen(false)}>LOGIN</Link></li> */}
 
       </ul>
     </nav>
