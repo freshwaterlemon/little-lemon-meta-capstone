@@ -1,8 +1,8 @@
 import React from 'react'
-import footerlogo from '../assets/footerlogo.png'
+import footerlogo from '../../assets/footerlogo.png'
 import './Footer.css'
-import Navbar from './Navbar'
-import SocialMedia from './SocialMedia'
+import Navbar from '../Navbar/Navbar'
+import SocialMedia from '../SocialMedia/SocialMedia'
 
 const Footer = () => {
   return (
