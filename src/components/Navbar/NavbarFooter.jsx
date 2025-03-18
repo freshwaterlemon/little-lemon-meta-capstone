@@ -10,7 +10,6 @@ const NavbarFooter = ({ className }) => {
         <li><a href="#menu">MENU</a></li>
         <li><a href="#reservation">RESERVATION</a></li>
         <li><a href="#order online">ORDER ONLINE</a></li>
-        <li><a href="#login">LOGIN</a></li>
       </ul>
     </nav>
   )
