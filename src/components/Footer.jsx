@@ -19,7 +19,7 @@ const Footer = () => {
           <h4>Contact</h4>
           <p>Address: 1234 Street Name, City, State, 12345</p>
           <p>Phone: (+65) 1234 5678</p>
-          <p>Email: LittleLemonRestarunt@food.com</p>
+          <p>Email: LittleLemonRestaurant@food.com</p>
         </div>
         <div className="social-media">
           <h4>Social Media</h4>
