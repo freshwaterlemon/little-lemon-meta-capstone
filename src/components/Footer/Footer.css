@@ -21,12 +21,12 @@
 /* Media query for large screens (992px and above) */
 @media screen and (max-width: 992px) {
 	.footer-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
 	}
 
 	.footer-img,
@@ -69,7 +69,7 @@
 	}
 
 	.footer-img img,
-	.doormat-navigation{
+	.doormat-navigation {
 		display: none;
 	}
 }

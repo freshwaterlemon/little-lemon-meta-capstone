@@ -4,7 +4,7 @@ import './OrderOnline.css'
 const OrderOnline = () => {
   return (
     <>
-        <h2 className='order-online-h2'>Coming Soon...</h2>
+        <h2 className='order-online-h2 section-title'>Coming Soon...</h2>
     </>
   )
 }

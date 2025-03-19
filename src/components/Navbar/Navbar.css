@@ -5,6 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
+	font-size: 20px;
 }
 
 .navbar {
@@ -27,7 +28,7 @@
 }
 
 .navbar a:hover {
-	color: var(--color-primary-orange, #F4CE14);
+	color: var(--color-primary-orange, #f4ce14);
 }
 
 /* Hamburger menu styling */

@@ -2,28 +2,30 @@
 	width: 35%;
 	padding: 3rem;
 	background-color: var(--color-primary-green);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
-.booking-form h2{
-    font-size: 2rem;
-    color: var(--color-primary-yellow);
-    margin: 0;
+.booking-form h2 {
+	font-size: 1.5rem;
+	color: var(--color-primary-yellow);
+	margin: 0;
 }
 
-.booking-form p{
-    color: var(--color-primary-yellow);
-    margin: 0;
-    margin-bottom: 1rem;
+.booking-form p {
+	color: white;
+	margin: 0;
+	margin-bottom: 1rem;
 }
 
 .booking-form label {
 	display: block;
 	color: #ffffff;
-	font-size: 1.5rem;
 	text-align: left;
 	margin-bottom: 0;
+	font-family: 'Karla', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .booking-form input,
@@ -34,18 +36,20 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	width: 100%;
-    color: var(--color-secondary-black);
-    font-size: 1rem;
+	color: var(--color-secondary-black);
+	font-size: 1rem;
 }
 
 .booking-form button[type='submit'] {
 	padding: 10px;
 	background-color: var(--color-primary-yellow);
 	border: none;
-	border-radius: 5px;
+	border-radius: 16px;
 	cursor: pointer;
 	width: 100%;
-    margin-top: 2rem;
+	margin-top: 2rem;
+	font-size: 20px;
+	color: var(--color-secondary-black);
 }
 
 .booking-form button[type='submit']:hover {
@@ -53,19 +57,19 @@
 }
 
 .booking-form-container {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    margin: 2rem auto;
-    padding: 0.5rem 2rem;
-    width: 90%;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	margin: 2rem auto;
+	padding: 0.5rem 2rem;
+	width: 90%;
 }
 
 .form-image {
-    width: 300px; /* Adjust the width as needed */
-    height: auto;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    object-fit: cover;
-    background-color: var(--color-primary-green);
+	width: 300px; /* Adjust the width as needed */
+	height: auto;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	object-fit: cover;
+	background-color: var(--color-primary-green);
 }

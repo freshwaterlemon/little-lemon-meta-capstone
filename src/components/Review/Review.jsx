@@ -37,7 +37,7 @@ const Review = () => {
     return (
         <>
 
-            <h2 className='review-header'>Reviews</h2>
+            <h2 className='review-header section-title'>Reviews</h2>
             <div className="review-container">
                 <ReviewCard />
             </div>

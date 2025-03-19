@@ -8,7 +8,7 @@ const FoodCard = () => {
     const foodData = [
         {
             name: "Greek Salad",
-            description: "A refreshing salad with peppers, olives, and feta cheese, dressed with a tangy vinaigrette.",
+            description: "A refreshing salad with olives, and feta cheese, with tangy vinaigrette.",
             price: "SGD$25.00",
             image: greeksalad
         },
@@ -31,9 +31,9 @@ const FoodCard = () => {
             {foodData.map((food, index) => (
                 <div key={index} className="food-card">
                     <img src={food.image} alt={food.name} />
-                    <h3>{food.name}</h3>
-                    <p>{food.description}</p>
-                    <p>{food.price}</p>
+                    <h3 className='card-title'>{food.name}</h3>
+                    <p className='lead-text'>{food.description}</p>
+                    <p className='highlight-text'>{food.price}</p>
                 </div>
             ))}
         </>
@@ -55,7 +55,7 @@ const Menu = () => {
     return (
         <>
             <div className="menu-header-container">
-                <h2>Special</h2>
+                <h2 className='section-title'>Special</h2>
                 <MenuButton />
             </div>
             <div className="menu-container">

@@ -1,21 +1,21 @@
-.social-media-list{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    gap: 0.5rem;
+.social-media-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	gap: 0.5rem;
 }
 
 .social-media-list li {
-    margin: 0;
+	margin: 0;
 }
 
 .social-media-list a {
-    text-decoration: none;
-    color: var(--color-primary-green);
+	text-decoration: none;
+	color: var(--color-primary-green);
 }
 
 .social-media-list a:hover {
-	color: var(--color-primary-orange, #F4CE14);
+	color: var(--color-primary-orange, #f4ce14);
 }

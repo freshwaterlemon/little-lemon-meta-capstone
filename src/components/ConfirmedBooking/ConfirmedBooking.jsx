@@ -13,18 +13,18 @@ const ConfirmedBooking = () => {
 
     return (
         <div className="confirmed-booking">
-            <h2>Booking Confirmed!</h2>
+            <h2 className='section-categories'>Booking Confirmed!</h2>
             <div className="booking-details">
 
-                <h2>Your Reservation Details:</h2>
+                <h2 className='section-categories'>Your Reservation Details:</h2>
                 <div className='booking-details-list'>
-                    <p>📅 Date: {bookingData.date}</p>
-                    <p>⏰ Time: {bookingData.time}</p>
-                    <p>👥 Guests: {bookingData.guests}</p>
-                    <p>🎉 Occasion: {bookingData.occasion}</p>
+                    <p className='paragraph-text'>📅 Date: {bookingData.date}</p>
+                    <p className='paragraph-text'>⏰ Time: {bookingData.time}</p>
+                    <p className='paragraph-text'>👥 Guests: {bookingData.guests}</p>
+                    <p className='paragraph-text'>🎉 Occasion: {bookingData.occasion}</p>
                 </div>
             </div>
-            <p>Thank you for choosing Little Lemon. We look forward to serving you!</p>
+            <p className='paragraph-text'>Thank you for choosing Little Lemon. We look forward to serving you!</p>
         </div>
     );
 };

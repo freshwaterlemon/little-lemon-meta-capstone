@@ -37,8 +37,8 @@ const BookingForm = ({
         <>
             <div className="booking-form-container">
                 <div className="booking-form">
-                    <h2 id="form-heading">Reserve Table</h2>
-                    <p id="form-instructions">Please fill the form below accurately for us to serve you better!</p>
+                    <h2 className='section-categories' id="form-heading">Reserve Table</h2>
+                    <p className='paragraph-text' id="form-instructions">Please fill the form below accurately for us to serve you better!</p>
                     <form
                         onSubmit={onSubmit}
                         aria-labelledby="form-heading"
@@ -99,9 +99,9 @@ const BookingForm = ({
                                     </option>
                                 ))}
                             </select>
-                            <span id="guests-description" className="sr-only">
+                            {/* <span id="guests-description" className="sr-only">
                                 Select number of guests between 1 and 10
-                            </span>
+                            </span> */}
                         </div>
 
                         {/* Occasion Select */}
