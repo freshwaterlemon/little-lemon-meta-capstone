@@ -1,26 +1,17 @@
 import React, { useReducer, useState } from 'react';
-import './Reservation.css'
-import BookingForm from '../BookingForm/BookingForm'
+import './Reservation.css';
+import BookingForm from '../BookingForm/BookingForm';
+import { fetchAPI, submitAPI } from '../../api.jsx';
 
-export const initializeTimes = () => {
-    return {
-        availableTimeSlots: [
-            "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"
-        ]
-    };
-};
+// Initialize available times using API
+export const initializeTimes = () => ({
+    availableTimeSlots: fetchAPI(new Date())
+});
 
-export const updateTimes = (state, action) => {
-    if (action.date === '2025-03-19') {
-        return {
-            availableTimeSlots: ["18:00", "19:00", "20:00"]
-        };
-    } else {
-        return {
-            availableTimeSlots: state.availableTimeSlots
-        };
-    }
-};
+// Update times based on selected date using API
+export const updateTimes = (state, action) => ({
+    availableTimeSlots: fetchAPI(new Date(action.date))
+});
 
 
 const reducer = (state, action) => {
@@ -48,49 +39,35 @@ const Reservation = () => {
         { value: 'anniversary', label: 'Anniversary' },
     ];
 
+    // Form submission handler using submitAPI
     const handleSubmit = (event) => {
         event.preventDefault();
-        const bookingData = {
-            date,
-            time,
-            guests: parseInt(guests),
-            occasion
-        };
+        const bookingData = { date, time, guests: parseInt(guests), occasion };
 
-        // Handle form data (e.g., send it to a server)
-        console.log(bookingData);
-
-        // Example: Send data to a server using fetch API
-        // fetch('/your-server-endpoint', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(bookingData)
-        // })
-        // .then(response => response.json())
-        // .then(data => console.log(data))
-        // .catch(error => console.error('Error:', error));
+        if (submitAPI(bookingData)) {
+            alert('Reservation submitted successfully!');
+            // Optionally reset form fields here
+        } else {
+            alert('Failed to submit reservation. Please try again.');
+        }
     };
 
     return (
-        <>
-            <BookingForm
-                date={date}
-                setDate={setDate}
-                time={time}
-                setTime={setTime}
-                guests={guests}
-                setGuests={setGuests}
-                occasion={occasion}
-                setOccasion={setOccasion}
-                availableTimeSlots={state.availableTimeSlots}
-                guestOptions={guestOptions}
-                occasionOptions={occasionOptions}
-                handleSubmit={handleSubmit}
-                dispatch={dispatch}
-            />
-        </>
+        <BookingForm
+            date={date}
+            setDate={setDate}
+            time={time}
+            setTime={setTime}
+            guests={guests}
+            setGuests={setGuests}
+            occasion={occasion}
+            setOccasion={setOccasion}
+            availableTimeSlots={state.availableTimeSlots}
+            guestOptions={guestOptions}
+            occasionOptions={occasionOptions}
+            handleSubmit={handleSubmit}
+            dispatch={dispatch}
+        />
     );
 };
 

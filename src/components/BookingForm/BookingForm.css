@@ -15,7 +15,7 @@
 .booking-form p{
     color: var(--color-primary-yellow);
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .booking-form label {
