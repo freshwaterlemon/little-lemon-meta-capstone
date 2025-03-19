@@ -2,7 +2,7 @@ import React, { useReducer, useState } from 'react';
 import './Reservation.css'
 import BookingForm from '../BookingForm/BookingForm'
 
-const initializeTimes = () => {
+export const initializeTimes = () => {
     return {
         availableTimeSlots: [
             "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"
@@ -10,9 +10,8 @@ const initializeTimes = () => {
     };
 };
 
-const updateTimes = (state, action) => {
-    // Example logic to update available times based on the date
-    if (action.date === '2025-03-19') { // Example date
+export const updateTimes = (state, action) => {
+    if (action.date === '2025-03-19') {
         return {
             availableTimeSlots: ["18:00", "19:00", "20:00"]
         };
@@ -47,7 +46,6 @@ const Reservation = () => {
         { value: 'casual', label: 'Casual Dining' },
         { value: 'birthday', label: 'Birthday' },
         { value: 'anniversary', label: 'Anniversary' },
-        // Add more occasions here
     ];
 
     const handleSubmit = (event) => {
@@ -55,7 +53,7 @@ const Reservation = () => {
         const bookingData = {
             date,
             time,
-            guests: parseInt(guests), // Convert guests to a number
+            guests: parseInt(guests),
             occasion
         };
 
