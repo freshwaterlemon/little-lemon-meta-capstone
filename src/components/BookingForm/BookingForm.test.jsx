@@ -24,3 +24,5 @@ test('Renders the BookingForm heading', () => {
     const headingElement = screen.getByText('Reserve Table');
     expect(headingElement).toBeInTheDocument();
 });
+
+
