@@ -23,13 +23,24 @@ const BookingForm = ({
         dispatch({ type: 'UPDATE_TIMES', date: event.target.value });
     };
 
+    const onSubmit = (event) => {
+        event.preventDefault();
+        const formData = {
+            date,
+            time,
+            guests: parseInt(guests),
+            occasion,
+        };
+        handleSubmit(formData); // Call handleSubmit passed via props
+    };
+
     return (
         <>
             <div className="booking-form-container">
                 <div className="booking-form">
                     <h2>Reserve Table</h2>
                     <p>Please fill the form below accurately for us serve you better!</p>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={onSubmit}>
                         <label>Date:</label>
                         <input type="date" value={date} onChange={handleDateChange} required />
 

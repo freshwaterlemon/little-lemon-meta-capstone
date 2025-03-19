@@ -23,7 +23,7 @@ const reducer = (state, action) => {
     }
 };
 
-const Reservation = () => {
+const Reservation = ({ submitForm }) => {
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState('1');
@@ -34,23 +34,11 @@ const Reservation = () => {
     const guestOptions = Array.from({ length: 10 }, (_, i) => (i + 1).toString());
 
     const occasionOptions = [
+        { value: 'none', label: 'Select an Occasion' },
         { value: 'casual', label: 'Casual Dining' },
         { value: 'birthday', label: 'Birthday' },
         { value: 'anniversary', label: 'Anniversary' },
     ];
-
-    // Form submission handler using submitAPI
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const bookingData = { date, time, guests: parseInt(guests), occasion };
-
-        if (submitAPI(bookingData)) {
-            alert('Reservation submitted successfully!');
-            // Optionally reset form fields here
-        } else {
-            alert('Failed to submit reservation. Please try again.');
-        }
-    };
 
     return (
         <BookingForm
@@ -65,7 +53,12 @@ const Reservation = () => {
             availableTimeSlots={state.availableTimeSlots}
             guestOptions={guestOptions}
             occasionOptions={occasionOptions}
-            handleSubmit={handleSubmit}
+            handleSubmit={(formData) => submitForm({
+                date,
+                time,
+                guests: parseInt(guests),
+                occasion
+            })}
             dispatch={dispatch}
         />
     );
