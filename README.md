@@ -2,7 +2,7 @@
  Meta frontend developer capstone project
 
 ## Web site preview
- [Preview here (reload page if it is showing blank screen)
+ [Preview here (reload page if it is showing blank screen)](https://freshwaterlemon.github.io/little-lemon-meta-capstone/)
 
 ## Features
 - **High-Fidelity Prototype:** Example content to showcase the design and functionality of the Little Lemon website.
