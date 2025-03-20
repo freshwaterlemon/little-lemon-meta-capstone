@@ -46,7 +46,7 @@ function MenuButton() {
     };
 
     return (
-        <button className="menu-button" onClick={openImg}>View Menu</button>
+        <button className="/little-lemon-meta-capstone/menu-button" onClick={openImg}>View Menu</button>
     );
 }
 
