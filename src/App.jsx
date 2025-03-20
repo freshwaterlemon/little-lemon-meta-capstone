@@ -6,7 +6,7 @@ import ScrollToSection from './components/ScrollToSection/ScrollToSection'
 import OrderOnline from './components/OrderOnline/OrderOnline'
 import Reservation from './components/Reservation/Reservation'
 import ConfirmedBooking from './components/ConfirmedBooking/ConfirmedBooking'
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { submitAPI } from './api.jsx';
 
 function App() {
