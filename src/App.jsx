@@ -25,14 +25,14 @@ function App() {
     <>
       <ScrollToSection />
       <Header />
-      <BrowserRouter basename="/little-lemon-meta-capstone">
+      {/* <BrowserRouter basename="/little-lemon-meta-capstone"> */}
         <Routes>
           <Route path="/" element={<Body />} />
           <Route path="/order-online" element={<OrderOnline />} />
           <Route path="/reservation" element={<Reservation submitForm={submitForm} />} />
           <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
-      </BrowserRouter >
+      {/* </BrowserRouter > */}
 
       <Footer />
     </>
