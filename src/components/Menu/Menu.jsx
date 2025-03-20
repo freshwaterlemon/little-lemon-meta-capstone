@@ -42,11 +42,11 @@ const FoodCard = () => {
 
 function MenuButton() {
     const openImg = () => {
-        window.open('/menu.png', '_blank');
+        window.open('/little-lemon-meta-capstone/menu.png', '_blank');
     };
 
     return (
-        <button className="/little-lemon-meta-capstone/menu-button" onClick={openImg}>View Menu</button>
+        <button className="menu-button" onClick={openImg}>View Menu</button>
     );
 }
 
